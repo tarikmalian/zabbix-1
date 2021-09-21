@@ -184,7 +184,7 @@ zabbix_export:
                 if (MEngine.HTTPProxy) {
                     request.setProxy(MEngine.HTTPProxy);
                 }
-        
+                data.request.priority = {id : '4'};
                 if (typeof data !== 'undefined') {
                     data = JSON.stringify(data);
                 }
